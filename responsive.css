@@ -1,0 +1,70 @@
+.r {clear: both;}
+
+.rgrid {
+	width: 100%;
+}
+
+.c12, .c6, .c3 {
+	float: left; position: relative;
+}
+
+.c12 {
+	background: green;
+}
+
+.c6 {
+	background: blue;
+	
+}
+
+.c3 {
+	background: yellow;
+
+}
+
+@media (max-width: 600px) {
+	.c12 {
+		width: 100%;
+	}
+
+    .c6 {
+        width: 100%;
+    }
+
+    .c3 {
+    	width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    .rgrid {
+        width: 100%;
+    }
+
+    .r {
+        clear: both;
+        display: table;
+        width: 100%;
+    }
+
+    .c12, .c6, .c3 {
+        display: table-cell;
+        float: none;
+    }
+
+    .c12 {
+    	width: 100%;
+    }
+
+    .c6 {
+    	width: 50%;
+    }
+
+    .c3 {
+    	width: 25%;
+    }
+
+    .c2 {
+        width: 16.66%;
+    }
+}
