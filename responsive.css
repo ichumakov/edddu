@@ -32,6 +32,8 @@ h1, h2, h3 {
     background: #eee;
     height: 50px;
     border: 1px solid #ccc;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .r {
