@@ -17,9 +17,21 @@
 	
 }
 
+.c4 {
+    background: orange;
+}
+
 .c3 {
 	background: yellow;
 
+}
+
+.c2 {
+    background: cyan;
+}
+
+.c1 {
+    background: purple;
 }
 
 @media (max-width: 600px) {
@@ -34,6 +46,18 @@
     .c3 {
     	width: 100%;
     }
+
+    .c4 {
+        width: 100%;
+    }
+
+    .c2 {
+        width: 100%;
+    }
+
+    .c1 {
+        width: 100%;
+    }
 }
 
 @media (min-width: 601px) {
@@ -47,7 +71,7 @@
         width: 100%;
     }
 
-    .c12, .c6, .c3 {
+    .c12, .c6, .c4, .c3, .c2, .c1 {
         display: table-cell;
         float: none;
     }
@@ -60,11 +84,19 @@
     	width: 50%;
     }
 
+    .c4 {
+        width: 33.33%;
+    }
+
     .c3 {
     	width: 25%;
     }
 
     .c2 {
         width: 16.66%;
+    }
+
+    .c1 {
+        width: 8.33%;
     }
 }
