@@ -21,6 +21,12 @@ h1, h2, h3 {
     margin: 7px 0 0 15px;
 }
 
+.toogle {
+    float: right;
+    height: 50px;
+    margin: -25px 15px 0 0;
+}
+
 /* responsive elements */
 
 .container {
@@ -116,7 +122,11 @@ h1, h2, h3 {
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 641px) {
+    .toogle {
+        display: none;
+    }
+
     .rgrid {
         width: 100%;
         display: table;
