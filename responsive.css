@@ -13,7 +13,6 @@ h1, h2, h3 {
     background: #3894D1 !important;
     height:50px;
     color: #fff;
-    margin-top: -15px;
 }
 
 .logo {
@@ -33,20 +32,26 @@ h1, h2, h3 {
     height: 50px;
     border: 1px solid #ccc;
     text-align: center;
-    padding-top: 15px;
+    line-height: 50px;
+
 }
 
 .r {
     clear: both;
     margin: 0 0 15px 0;
+    display: table;
+    width: 100%;
 }
 
 
 .rgrid {
 	width: 100%;
+    clear: both;
+    margin: 0 0 15px 0;
+    height: 50px;
 }
 
-.c12, .c6, .c3 {
+.c12, .c6, .c4, .c3, .c2, .c1 {
 	float: left; position: relative;
 }
 
@@ -74,7 +79,14 @@ h1, h2, h3 {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
+    body {
+        margin:0; padding: 0;
+    }
+    .wrapper {
+
+    }
+
 	.c12 {
 		width: 100%;
 	}
@@ -107,6 +119,7 @@ h1, h2, h3 {
 @media (min-width: 601px) {
     .rgrid {
         width: 100%;
+        display: table;
     }
 
     .r {
