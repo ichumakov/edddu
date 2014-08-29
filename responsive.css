@@ -21,6 +21,11 @@ h1, h2, h3 {
     margin: 7px 0 0 15px;
 }
 
+.menu {
+    float: right;
+    margin: -25px 15px 0 0;
+}
+
 .toogle {
     float: right;
     height: 50px;
@@ -89,6 +94,11 @@ h1, h2, h3 {
     body {
         margin:0; padding: 0;
     }
+
+    .menu {
+        display: none;
+    }
+
     .wrapper {
 
     }
