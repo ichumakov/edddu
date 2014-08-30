@@ -11,6 +11,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="script.js"></script>
+    <script src="menum.js"></script>
   </head>
 
   <body>
@@ -20,17 +21,19 @@
       
         <div class="c12 nav">
           <div id="logo" class="logo">edddu</div>
-          <div id="menu" class="menu">
-            Get Started Examples
+          <div id="menum" class="menum">
+              <div id="navim" class="navim">Get Started</div><div id="navim" class="navim">Examples</div>
           </div>
           <div id="toogle" class="toogle">
-            <i class="fa fa-bars fa-2x"></i>
+            1
+            <i class="fa fa-bars"></i>
           </div>
         </div><!-- nav -->
       
     </div><!-- rgrid -->
 
-     <div class="container">
+
+     <div id="container" class="container">
       <h1 class="hidem">Welcome to edddu !</h1>
 
       <p>Hi, Everyone! I created edddu for people who need to know how to create a responsive layout with HTML, CSS & JS.
@@ -40,7 +43,7 @@
       <br />
 
       <h2>Grid system</h2>
-      <p>Example of 12 simple columns grid of edddu.
+      <p id="p">Example of 12 simple columns grid of edddu.
       </p>
 
       <div class="r">
@@ -102,5 +105,7 @@
 
     </div><!-- container -->
   </div><!-- wrapper -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </body>
 </html>

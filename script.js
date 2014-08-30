@@ -11,9 +11,9 @@ window.onresize = function() {
           if (mq.matches) {
             document.getElementById('toogle').style.display = 'block';
           }
-        else {
-          document.getElementById('toogle').style.display = 'none';
-        }
+          else {
+            document.getElementById('toogle').style.display = 'none';
+          }
 
         }
       }
