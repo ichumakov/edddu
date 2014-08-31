@@ -1,113 +1,125 @@
 <html>
-  <head>
-  	<title>edddu - responsive template</title>
-  	
-  	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" type="text/css" href="responsive.css">
+<head>
+	<title>edddu - responsive template</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/menum.js"></script>
+	<script src="scripts/click.js"></script>
+</head>
 
-    <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
+<body>
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="menum.js"></script>
-    <script src="click.js"></script>
-  </head>
+<div class="wrapper">
+	<div class="rgrid">
 
-  <body>
-    
-  <div class="wrapper">
-    <div class="rgrid">
-      
-        <div class="c12 nav">
-          <div id="logo" class="logo">edddu</div>
-          <div id="menum" class="menum">
-              <div id="navim" class="navim">Get Started</div><div id="navim" class="navim">Examples</div>
-          </div>
-          <div id="toogle" class="toogle">
-            <div class="fa fa-bars fa-2x" id="menuc" onclick="switchRegister();"></div>
-          </div>
-        </div><!-- nav -->
-      
-    </div><!-- rgrid -->
+		<div class="c12 nav">
+			<div id="logo" class="logo">edddu</div>
+			<div id="menum" class="menum">
+				<div id="navim" class="navim">Get Started</div>
+				<div id="navim" class="navim">Examples</div>
+			</div>
+			<div id="toogle" class="toogle">
+				<div class="fa fa-bars fa-2x" id="menuc" onclick="switchRegister();"></div>
+			</div>
+		</div>
+		<!-- nav -->
+
+	</div>
+	<!-- rgrid -->
 
 
-     <div id="container" class="container">
-      <h1 class="hidem">Welcome to edddu !</h1>
+	<div id="container" class="container">
+		<h1 class="hidem">Welcome to edddu !</h1>
 
-      <p>Hi, Everyone! I created edddu for people who need to know how to create a responsive layout with HTML, CSS & JS.
-      Let's surf if it is interesting for you!
-      </p>
+		<p>Hi, Everyone! I created edddu for people who need to know how to create a responsive layout with HTML, CSS &
+			JS.
+			Let's surf if it is interesting for you!
+		</p>
 
-      <br />
+		<br/>
 
-      <h2>Grid system</h2>
-      <p id="p">Example of 12 simple columns grid of edddu.
-      </p>
+		<h2>Grid system</h2>
 
-      <div class="r">
-      	<div class="c12 cc">c12</div>
-      </div><!-- r -->
+		<p id="p">Example of 12 simple columns grid of edddu.
+		</p>
 
-  	  <div class="r">
-  	  	<div class="c6 cc">c6</div>
-  	  	<div class="c6 cc">c6</div>
-	    </div><!-- r -->
+		<div class="r">
+			<div class="c12 cc">c12</div>
+		</div>
+		<!-- r -->
 
-      <div class="r">
-        <div class="c4 cc">c4</div>
-        <div class="c4 cc">c4</div>
-        <div class="c4 cc">c4</div>
-      </div><!-- r -->
+		<div class="r">
+			<div class="c6 cc">c6</div>
+			<div class="c6 cc">c6</div>
+		</div>
+		<!-- r -->
 
-  	  <div class="r">
-  	  	<div class="c3 cc">c3</div>
-  	  	<div class="c3 cc">c3</div>
-  	  	<div class="c3 cc">c3</div>
-  	  	<div class="c3 cc">c3</div>
-  	  </div><!-- r -->
+		<div class="r">
+			<div class="c4 cc">c4</div>
+			<div class="c4 cc">c4</div>
+			<div class="c4 cc">c4</div>
+		</div>
+		<!-- r -->
 
-      <div class="r">
-        <div class="c2 cc">c2</div>
-        <div class="c2 cc">c2</div>
-        <div class="c2 cc">c2</div>
-        <div class="c2 cc">c2</div>
-        <div class="c2 cc">c2</div>
-        <div class="c2 cc">c2</div>
-      </div><!-- r -->
+		<div class="r">
+			<div class="c3 cc">c3</div>
+			<div class="c3 cc">c3</div>
+			<div class="c3 cc">c3</div>
+			<div class="c3 cc">c3</div>
+		</div>
+		<!-- r -->
 
-       <div class="r hidem">
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-        <div class="c1 cc">c1</div>
-      </div><!-- r -->
+		<div class="r">
+			<div class="c2 cc">c2</div>
+			<div class="c2 cc">c2</div>
+			<div class="c2 cc">c2</div>
+			<div class="c2 cc">c2</div>
+			<div class="c2 cc">c2</div>
+			<div class="c2 cc">c2</div>
+		</div>
+		<!-- r -->
 
-      <br />
-      <h2>Hidden elements</h2>
-      <p>If you want to hide some blocks at a mobile view add a special class <strong>hidem</strong> to elements.
-      </p>
+		<div class="r hidem">
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+			<div class="c1 cc">c1</div>
+		</div>
+		<!-- r -->
 
-      <div class="r">
-        <div class="c12 cc">
-          &lt;div class="c12 <strong>hidem</strong>"&gt;...&lt;/div&gt;
-        </div>
-      </div><!-- r -->
+		<br/>
 
-    </div><!-- container -->
-  </div><!-- wrapper -->
+		<h2>Hidden elements</h2>
 
-  <script>var toggled = true;</script>
+		<p>If you want to hide some blocks at a mobile view add a special class <strong>hidem</strong> to elements.
+		</p>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  </body>
+		<div class="r">
+			<div class="c12 cc">
+				&lt;div class="c12 <strong>hidem</strong>"&gt;...&lt;/div&gt;
+			</div>
+		</div>
+		<!-- r -->
+
+	</div>
+	<!-- container -->
+</div>
+<!-- wrapper -->
+
+<script>var toggled = true;</script>
+
+</body>
 </html>

@@ -1,8 +1,8 @@
 window.onload = function () {
-	var cs = window.getComputedStyle(menum,null).getPropertyValue("height");
+	var cs = window.getComputedStyle(menum, null).getPropertyValue("height");
 	var rb = document.body.clientWidth;
 	var pw = document.body.clientWidth;
-	if (pw>=640) {
+	if (pw >= 640) {
 		document.getElementById('menum').className = 'menuf';
 		$('.navim').addClass('navi').removeClass('navim'); //jQuery
 	}
@@ -11,8 +11,8 @@ window.onload = function () {
 		document.getElementById('menum').className = 'menum hidem';
 		$('.navi').addClass('navim').removeClass('navi'); //jQuery
 	}
-	
-	cs = parseInt(cs)+15; 
+
+	cs = parseInt(cs) + 15;
 	if ((isNaN(cs)) || (cs == 33) || (document.getElementById('menum').className == 'menum hidem')) cs = 0; // ! izmenit yslovie pro 33px
 	if (toggled == 0) cs = 33;
 	//document.getElementById("p").innerHTML = cs;
@@ -22,13 +22,13 @@ window.onload = function () {
 window.onresize = function () {
 	var pw = document.body.clientWidth;
 
-	var cs = window.getComputedStyle(menum,null).getPropertyValue("height");
-	cs = parseInt(cs)+15;
+	var cs = window.getComputedStyle(menum, null).getPropertyValue("height");
+	cs = parseInt(cs) + 15;
 	if ((isNaN(cs)) || (cs == 33)) cs = 0; // ! izmenit yslovie pro 33px
 	//document.getElementById("p").innerHTML = cs;
 	document.getElementById("container").style.marginTop = parseInt(cs);
 
-	if (pw>=640) {
+	if (pw >= 640) {
 		document.getElementById('menum').className = 'menuf';
 		$('.navim').addClass('navi').removeClass('navim'); //jQuery
 		toogled = 0;
