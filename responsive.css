@@ -15,8 +15,13 @@ h1, h2, h3 {
     color: #fff;
 }
 
+.fa-bars {
+    cursor: pointer !important;
+}
+
 .navi {
     float: left;
+    margin-right: 10px;
 }
 
 .navim {

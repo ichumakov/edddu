@@ -12,6 +12,7 @@
 
     <script src="script.js"></script>
     <script src="menum.js"></script>
+    <script src="click.js"></script>
   </head>
 
   <body>
@@ -25,8 +26,7 @@
               <div id="navim" class="navim">Get Started</div><div id="navim" class="navim">Examples</div>
           </div>
           <div id="toogle" class="toogle">
-            1
-            <i class="fa fa-bars"></i>
+            <div class="fa fa-bars fa-2x" id="menuc" onclick="switchRegister();"></div>
           </div>
         </div><!-- nav -->
       
@@ -105,6 +105,8 @@
 
     </div><!-- container -->
   </div><!-- wrapper -->
+
+  <script>var toggled = true;</script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </body>
