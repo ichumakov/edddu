@@ -7,6 +7,7 @@ window.onload = function () {
 		$('.navim').addClass('navi').removeClass('navim'); //jQuery
 	}
 	else {
+		//document.getElementById("menum").style.display = 'none';
 		document.getElementById('menum').className = 'menum hidem';
 		$('.navi').addClass('navim').removeClass('navi'); //jQuery
 	}
@@ -34,6 +35,7 @@ window.onresize = function () {
 	}
 	else {
 		if (document.getElementById('menum').className != 'menum hidem') {
+			//document.getElementById("menum").style.display = 'none';
 			document.getElementById('menum').className = 'menum hidem';
 			$('.navi').addClass('navim').removeClass('navi'); //jQuery
 		}

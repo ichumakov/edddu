@@ -15,6 +15,10 @@ h1, h2, h3 {
     color: #fff;
 }
 
+#menuc:hover {
+    color: #89D0FF;
+}
+
 .fa-bars {
     cursor: pointer !important;
 }
@@ -51,6 +55,8 @@ h1, h2, h3 {
     z-index: 1;
     width: 100%;
     background: #ccc;
+    display: none;
+    opacity: 0;
 }
 
 .toogle {
