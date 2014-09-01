@@ -34,7 +34,7 @@ window.onresize = function() {
                 click = 1;
             }else{
                 csh = window.getComputedStyle(menum,null).getPropertyValue("height");
-                document.getElementById("p").innerHTML = csh;
+                //document.getElementById("p").innerHTML = csh;
                 document.getElementById("container").style.marginTop = 15;
                 document.getElementById("menuc").style.color = '#FFFFFF';
                 //$('#container div').css('margin-top', ''+csh+'apx !important');

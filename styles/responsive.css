@@ -29,7 +29,8 @@ h1, h2, h3 {
 }
 
 .navim {
-    height: 50px;
+    height: 35px;
+	padding: 15px 0 0 15px;
 }
 
 .menuf {
@@ -54,7 +55,7 @@ h1, h2, h3 {
     margin: 10px 0 10px 0;
     z-index: 1;
     width: 100%;
-    background: #ccc;
+    background: #3894D1;
     display: none;
     opacity: 0;
 }
