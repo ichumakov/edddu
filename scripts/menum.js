@@ -31,6 +31,7 @@ window.onresize = function () {
 	if (pw >= 640) {
 		document.getElementById('menum').className = 'menuf';
 		$('.navim').addClass('navi').removeClass('navim'); //jQuery
+		document.getElementById("menum").style.opacity = '1';
 		toogled = 0;
 	}
 	else {
