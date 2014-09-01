@@ -1,0 +1,232 @@
+/* Basics */
+
+BODY {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+H1, H2, H3 {
+	font-family: 'Comfortaa', cursive;
+}
+
+A {
+	text-decoration: none;
+}
+
+A:hover {
+	text-decoration: underline;
+}
+
+
+/* Navigation bar */
+
+.nav {
+	background: #3894D1 !important;
+	height: 50px;
+	color: #fff;
+}
+
+.nav A {
+	color: #fff;
+}
+
+.nav A:hover {
+	color: #eee;
+	text-decoration: none;
+}
+
+.fa-bars {
+	cursor: pointer !important;
+}
+
+.navi {
+	float: left;
+	margin-right: 10px;
+}
+
+.navim {
+	height: 35px;
+	padding: 15px 0 0 15px;
+}
+
+.menuf {
+	position: absolute;
+	right: 5px;
+	top: 17px;
+}
+
+.logo {
+	float: left;
+	font-family: 'Comfortaa', cursive !important;
+	font-size: 1.7em;
+	margin: 7px 0 0 15px;
+	color: #fff;
+}
+
+.menuWrapper .menu {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 50px;
+}
+
+.menuWrapper .menu LI {
+	float: left;
+	margin-right: 15px;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1em;
+}
+
+.menuPlaceholder {
+	display: none;
+}
+
+.menuPlaceholder.active {
+	display: block;
+}
+
+.menuToggle {
+	float: right;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 50px !important;
+}
+
+.menuToggle.active {
+	color: #eee;
+}
+
+
+/* responsive elements */
+
+.container {
+	max-width: 1140px !important;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
+}
+
+.cc {
+	background: #eee;
+	height: 50px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 50px;
+
+}
+
+.r {
+	clear: both;
+	margin: 0 0 15px 0;
+	display: table;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
+	height: 50px;
+	background: #3894D1 !important;
+}
+
+.rgrid {
+	clear: both;
+}
+
+.c12, .c6, .c4, .c3, .c2, .c1 {
+	float: left;
+	position: relative;
+}
+
+@media (max-width: 640px) {
+	.menuWrapper {
+		display: none;
+	}
+
+	.wrapper {
+		display: table;
+	}
+
+	.c12 {
+		width: 100%;
+	}
+
+	.c6 {
+		width: 100%;
+	}
+
+	.c3 {
+		width: 100%;
+	}
+
+	.c4 {
+		width: 100%;
+	}
+
+	.c2 {
+		width: 100%;
+	}
+
+	.c1 {
+		width: 100%;
+	}
+
+	.hidem {
+		display: none;
+	}
+}
+
+@media (min-width: 641px) {
+	.menuToggle {
+		display: none !important;
+	}
+
+	.menuPlaceholder {
+		display: none !important;
+	}
+
+	.rgrid {
+		width: 100%;
+		max-width: 1140px !important;
+		display: table;
+		margin: 0 auto;
+		height: 50px;
+	}
+
+	.r {
+		clear: both;
+		display: table;
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+
+	.c12, .c6, .c4, .c3, .c2, .c1 {
+		display: table-cell;
+		float: none;
+	}
+
+	.c12 {
+		width: 100%;
+	}
+
+	.c6 {
+		width: 50%;
+	}
+
+	.c4 {
+		width: 33.33%;
+	}
+
+	.c3 {
+		width: 25%;
+	}
+
+	.c2 {
+		width: 16.66%;
+	}
+
+	.c1 {
+		width: 8.33%;
+	}
+}
