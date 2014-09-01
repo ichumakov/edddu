@@ -24,9 +24,9 @@ window.onresize = function() {
         $('#menuc').click(function() {
             if(click == 0){
                 csh = window.getComputedStyle(menum,null).getPropertyValue("height");
-                //document.getElementById("p").innerHTML = csh;
                 csh = parseInt(csh)+15;
-                document.getElementById("container").style.marginTop = parseInt(csh);
+				//document.getElementById("p").innerHTML = csh;
+                document.getElementById("container").style.marginTop = ''+parseInt(csh)+'px';
                 document.getElementById("menum").style.opacity = '1';
                 document.getElementById("menuc").style.color = '#89D0FF';
                 //$('#container div').css('margin-top', ''+csh+'apx !important');
@@ -35,7 +35,7 @@ window.onresize = function() {
             }else{
                 csh = window.getComputedStyle(menum,null).getPropertyValue("height");
                 //document.getElementById("p").innerHTML = csh;
-                document.getElementById("container").style.marginTop = 15;
+                document.getElementById("container").style.marginTop = '15px';
                 document.getElementById("menuc").style.color = '#FFFFFF';
                 //$('#container div').css('margin-top', ''+csh+'apx !important');
                 //$(this).css('right', '0px');                

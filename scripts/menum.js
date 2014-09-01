@@ -44,6 +44,7 @@ window.onresize = function () {
 		else {
 			document.getElementById('menum').className = 'menum';
 			$('.navi').addClass('navim').removeClass('navi'); //jQuery
+			document.getElementById("container").style.marginTop = parseInt(cs);
 		}
 	}
 }
