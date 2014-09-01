@@ -7,12 +7,29 @@ h1, h2, h3 {
     font-family: 'Comfortaa', cursive;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 /* Navigation bar */
 
 .nav {
     background: #3894D1 !important;
     height:50px;
     color: #fff;
+}
+
+.nav a {
+	color: #fff;
+}
+
+.nav a:hover {
+	color: #eee;
+	text-decoration: none;
 }
 
 #menuc:hover {
@@ -43,6 +60,7 @@ h1, h2, h3 {
     font-family: 'Comfortaa', cursive !important;
     font-size: 1.7em;
     margin: 7px 0 0 15px;
+	color: #fff;
 }
 
 .menu {
@@ -72,6 +90,9 @@ h1, h2, h3 {
 .container {
     margin-top: 0;
     margin: 0px 15px 0 15px;
+	max-width: 1140px !important;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
 }
 
 .cc {
@@ -90,12 +111,15 @@ h1, h2, h3 {
     width: 100%;
 }
 
+.row {
+	width: 100%;
+	height: 50px;
+	background: #3894D1 !important;
+}
 
 .rgrid {
-	width: 100%;
     clear: both;
-    margin: 0 0 15px 0;
-    height: 50px;
+    /* margin: 0 0 15px 0; */
 }
 
 .c12, .c6, .c4, .c3, .c2, .c1 {
@@ -136,7 +160,7 @@ h1, h2, h3 {
     }
 
     .wrapper {
-
+		display: table;
     }
 
 	.c12 {
@@ -178,8 +202,11 @@ h1, h2, h3 {
     }
 
     .rgrid {
-        width: 100%;
+		width: 100%;
+        max-width: 1140px !important;
         display: table;
+		margin: 0 auto;
+		height: 50px;
     }
 
     .r {
