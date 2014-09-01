@@ -13,7 +13,7 @@ window.onload = function () {
 	}
 
 	cs = parseInt(cs) + 15;
-	if ((isNaN(cs)) || (cs == 33) || (document.getElementById('menum').className == 'menum hidem')) cs = 0; // ! izmenit yslovie pro 33px
+	if ((isNaN(cs)) || (cs == 33) || (document.getElementById('menum').className == 'menum hidem') || (toggled === true)) cs = 0; // ! izmenit yslovie pro 33px
 	if (toggled == 0) cs = 33;
 	//document.getElementById("p").innerHTML = cs;
 	document.getElementById("container").style.marginTop = parseInt(cs);
@@ -24,7 +24,7 @@ window.onresize = function () {
 
 	var cs = window.getComputedStyle(menum, null).getPropertyValue("height");
 	cs = parseInt(cs) + 15;
-	if ((isNaN(cs)) || (cs == 33)) cs = 0; // ! izmenit yslovie pro 33px
+	if ((isNaN(cs)) || (cs == 33) || (toggled === true)) cs = 0; // ! izmenit yslovie pro 33px
 	//document.getElementById("p").innerHTML = cs;
 	document.getElementById("container").style.marginTop = parseInt(cs);
 
@@ -34,9 +34,14 @@ window.onresize = function () {
 		toogled = 0;
 	}
 	else {
-		if (document.getElementById('menum').className != 'menum hidem') {
+		if ((document.getElementById('menum').className != 'menum hidem') && (toggled === true)) {
 			//document.getElementById("menum").style.display = 'none';
+			document.getElementById("menum").style.opacity = '0';
 			document.getElementById('menum').className = 'menum hidem';
+			$('.navi').addClass('navim').removeClass('navi'); //jQuery
+		}
+		else {
+			document.getElementById('menum').className = 'menum';
 			$('.navi').addClass('navim').removeClass('navi'); //jQuery
 		}
 	}
