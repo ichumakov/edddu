@@ -50,12 +50,6 @@ A:hover {
 	padding: 15px 0 0 15px;
 }
 
-.menuf {
-	position: absolute;
-	right: 5px;
-	top: 17px;
-}
-
 .logo {
 	float: left;
 	font-family: 'Comfortaa', cursive !important;
@@ -85,6 +79,29 @@ A:hover {
 
 .menuPlaceholder.active {
 	display: block;
+}
+
+.menuPlaceholder .menu {
+	background: #3894D1;
+	border-top: 1px solid #fff;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menuPlaceholder .menu LI {
+	line-height: 50px;
+}
+
+.menuPlaceholder .menu A {
+	display: block;
+	padding: 0 15px;
+	color: #fff;
+}
+
+.menuPlaceholder .menu A:hover {
+	text-decoration: none;
+	color: #eee;
 }
 
 .menuToggle {
